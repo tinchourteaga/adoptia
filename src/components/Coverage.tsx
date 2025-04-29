@@ -1,5 +1,103 @@
 import React from 'react';
 import { Globe2 } from 'lucide-react';
+import {
+  ComposableMap,
+  Geographies,
+  Geography,
+  Marker,
+  Annotation,
+} from "react-simple-maps";
+import { Tooltip } from 'react-tooltip';
+
+
+const MapChart = () => (
+  <div style={{ width: "100%", overflowX: "auto", borderStyle: "double" }}>
+    <ComposableMap width={1400} height={800} projectionConfig={{ scale: 300 }}>
+      <Geographies geography="/map.json">
+        {({ geographies }) =>
+          geographies.map((geo) => {
+            const isHighlighted = geo.id === "ESP" || geo.id === "ARG";
+            return (
+              <Geography
+                key={geo.rsmKey}
+                geography={geo}
+                style={{
+                  default: {
+                    fill: isHighlighted ? "#FFA500" : "#ffffff", // orange for selected
+                    outline: "none",
+                  },
+                  hover: {
+                    fill: isHighlighted ? "#CC7000" : "#dddddd", // darker orange or gray on hover
+                    outline: "none",
+                  },
+                  pressed: {
+                    fill: isHighlighted ? "#CC7000" : "#dddddd",
+                    outline: "none",
+                  },
+                }}
+              />
+            );
+          })
+        }
+      </Geographies>
+
+      {/* Spain Marker + Annotation */}
+      <Marker coordinates={[-3.7038, 40.4168]}>
+        <circle
+          r={8}
+          fill="#FF5533"
+          stroke="#fff"
+          strokeWidth={2}
+          data-tooltip-id="map-tooltip"
+          data-tooltip-content="20+ shelters"
+        />
+      </Marker>
+      <Annotation
+        subject={[-3.7038, 40.4168]}
+        dx={-30}
+        dy={-20}
+        connectorProps={{
+          stroke: "#FF5533",
+          strokeWidth: 2,
+          strokeLinecap: "round",
+        }}
+      >
+        <text x="-8" textAnchor="end" alignmentBaseline="middle" fill="#FF5533" fontWeight={"bold"}>
+          Spain
+        </text>
+      </Annotation>
+
+      {/* Argentina Marker + Annotation */}
+      <Marker coordinates={[-64.4173, -34.6118]}>
+        <circle
+          r={8}
+          fill="#FF5533"
+          stroke="#fff"
+          strokeWidth={2}
+          data-tooltip-id="map-tooltip"
+          data-tooltip-content="30+ shelters"
+        />
+      </Marker>
+      <Annotation
+        subject={[-64.4173, -34.6118]}
+        dx={-40}
+        dy={-20}
+        connectorProps={{
+          stroke: "#FF5533",
+          strokeWidth: 2,
+          strokeLinecap: "round",
+        }}
+      >
+        <text x="-10" textAnchor="end" alignmentBaseline="middle" fill="#FF5533" fontWeight={"bold"}>
+          Argentina
+        </text>
+      </Annotation>
+    </ComposableMap>
+
+    <Tooltip id="map-tooltip" />
+  </div>
+)
+
 
 const Coverage: React.FC = () => {
   return (
@@ -13,7 +111,6 @@ const Coverage: React.FC = () => {
             to help more pets find their forever homes.
           </p>
         </div>
-
         <div className="max-w-5xl mx-auto">
           <div className="flex items-center justify-center gap-8 mb-8 flex-wrap">
             <div className="flex items-center gap-3">
@@ -25,42 +122,7 @@ const Coverage: React.FC = () => {
               <span className="text-blue-100">50+ Partner Shelters</span>
             </div>
           </div>
-          
-          <div className="relative h-[500px] bg-white/10 backdrop-blur-md rounded-2xl p-8">
-            {/* Spain Region */}
-            <div className="absolute top-[25%] left-[45%] group">
-              <div className="animate-ping absolute w-8 h-8 bg-white opacity-20 rounded-full"></div>
-              <div className="absolute w-8 h-8 bg-white opacity-30 rounded-full"></div>
-              <div className="w-4 h-4 bg-white rounded-full relative"></div>
-              <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-white/90 backdrop-blur-sm text-blue-900 px-3 py-1 rounded-lg text-sm font-medium whitespace-nowrap">
-                Spain: 20+ shelters
-              </div>
-            </div>
-
-            {/* South America Region */}
-            <div className="absolute top-[60%] left-[30%] group">
-              <div className="animate-ping absolute w-16 h-24 bg-white opacity-20 rounded-full"></div>
-              <div className="absolute w-16 h-24 bg-white opacity-30 rounded-full"></div>
-              <div className="w-4 h-4 bg-white rounded-full relative"></div>
-              <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-white/90 backdrop-blur-sm text-blue-900 px-3 py-1 rounded-lg text-sm font-medium whitespace-nowrap">
-                South America: 30+ shelters
-              </div>
-            </div>
-
-            {/* Map Grid Lines */}
-            <div className="absolute inset-0 grid grid-cols-8 grid-rows-6">
-              {Array.from({ length: 48 }).map((_, i) => (
-                <div key={i} className="border border-white/10"></div>
-              ))}
-            </div>
-
-            {/* Continents Outline */}
-            <div className="absolute inset-0 opacity-20">
-              <div className="absolute top-[20%] left-[40%] w-[20%] h-[15%] bg-white/20 rounded-lg transform rotate-12"></div>
-              <div className="absolute top-[45%] left-[20%] w-[25%] h-[35%] bg-white/20 rounded-lg"></div>
-            </div>
-          </div>
-
+          <MapChart></MapChart>
           <div className="grid md:grid-cols-2 gap-8 mt-12">
             <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 text-center">
               <h3 className="text-xl font-bold text-white mb-2">Spain</h3>
