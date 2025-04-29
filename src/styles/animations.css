@@ -1,0 +1,96 @@
+/* Base Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Utility Classes */
+.animate-fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 1s ease forwards;
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-400 {
+  animation-delay: 400ms;
+}
+
+.animation-delay-600 {
+  animation-delay: 600ms;
+}
+
+/* Scroll Animations */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-on-scroll-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom Colors for Tailwind */
+:root {
+  --color-primary: #3B7FD9;
+  --color-secondary: #1AC0C6;
+  --color-accent: #FF7D3B;
+}
+
+/* Fix for Tailwind custom colors */
+.text-3B7FD9 {
+  color: var(--color-primary);
+}
+
+.bg-3B7FD9 {
+  background-color: var(--color-primary);
+}
+
+.border-3B7FD9 {
+  border-color: var(--color-primary);
+}
+
+.focus\:border-3B7FD9:focus {
+  border-color: var(--color-primary);
+}
+
+.focus\:ring-3B7FD9:focus {
+  --tw-ring-color: var(--color-primary);
+}
+
+.hover\:bg-3B7FD9:hover {
+  background-color: var(--color-primary);
+}
