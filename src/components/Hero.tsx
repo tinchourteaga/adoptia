@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/30 to-teal-500/30 rounded-2xl transform rotate-3"></div>
               <img 
-                src="https://images.pexels.com/photos/1904105/pexels-photo-1904105.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                src="src/assets/couple_with_cat_2.png"
                 alt="Happy adopted dog with family" 
                 className="rounded-2xl shadow-xl relative z-10 w-full object-cover h-[500px]"
               />

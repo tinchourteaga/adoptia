@@ -61,23 +61,23 @@ export const testimonials: Testimonial[] = [
   {
     id: 1,
     quote: "Thanks to Adoptia's AI matching, we found our perfect companion. The platform made it easy to find a pet that fits our lifestyle perfectly.",
-    author: "The Williams Family",
+    author: "May and Ringo",
     company: "California",
-    imageUrl: "https://images.pexels.com/photos/3995917/pexels-photo-3995917.jpeg?auto=compress&cs=tinysrgb&w=800"
+    imageUrl: "src/assets/kid_with_dog.png"
   },
   {
     id: 2,
-    quote: "As a shelter manager, Adoptia has transformed how we connect our animals with loving homes. Their AI technology is revolutionary.",
+    quote: "As shelter volunteers, Adoptia has transformed how we connect our animals with loving homes. Their AI technology is revolutionary.",
     author: "Emily Thornton",
     company: "Happy Tails Shelter",
-    imageUrl: "https://images.pexels.com/photos/5324950/pexels-photo-5324950.jpeg?auto=compress&cs=tinysrgb&w=800"
+    imageUrl: "src/assets/group_with_dogs.png"
   },
   {
     id: 3,
     quote: "The AI-powered matching system helped us find our senior cat Max. We couldn't be happier with how perfect he is for our family.",
-    author: "The Martinez Family",
+    author: "Mary and Max",
     company: "Texas",
-    imageUrl: "https://images.pexels.com/photos/6593867/pexels-photo-6593867.jpeg?auto=compress&cs=tinysrgb&w=800"
+    imageUrl: "src/assets/elder_with_dog.png"
   },
 ];
 

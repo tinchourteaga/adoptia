@@ -7,6 +7,7 @@ import Blog from './pages/Blog';
 import Footer from './components/Footer';
 import './styles/animations.css';
 import { LanguageProvider } from './contexts/LanguageContext';
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   useEffect(() => {
@@ -39,6 +40,7 @@ function App() {
   return (
     <LanguageProvider>
       <Router>
+      <ScrollToTop />
         <div className="font-sans text-gray-900 antialiased">
           <Navbar />
           <Routes>
