@@ -1,5 +1,5 @@
 import React from 'react';
-import { ClipboardList, Users, LineChart, MessageSquare, Bell, Calendar } from 'lucide-react';
+import { ClipboardList, LineChart, MessagesSquare, Bell, Calendar, Handshake } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useTranslation } from '../i18n';
 
@@ -31,7 +31,7 @@ const ShelterFeatures: React.FC = () => {
 
           <div className="bg-gray-50 rounded-xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
             <div className="bg-3B7FD9/10 rounded-full p-4 w-16 h-16 flex items-center justify-center mb-6">
-              <Users size={32} className="text-3B7FD9" />
+              <Handshake size={32} className="text-3B7FD9" />
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-4">{t('shelterFeatures.matching.title')}</h3>
             <p className="text-gray-700">
@@ -51,7 +51,7 @@ const ShelterFeatures: React.FC = () => {
 
           <div className="bg-gray-50 rounded-xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
             <div className="bg-3B7FD9/10 rounded-full p-4 w-16 h-16 flex items-center justify-center mb-6">
-              <MessageSquare size={32} className="text-3B7FD9" />
+              <MessagesSquare size={32} className="text-3B7FD9" />
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-4">{t('shelterFeatures.communication.title')}</h3>
             <p className="text-gray-700">

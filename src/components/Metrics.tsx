@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, Building2, Globe } from 'lucide-react';
+import { Heart, Building2, Wand2 } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useTranslation } from '../i18n';
 
@@ -25,7 +25,7 @@ const Metrics: React.FC = () => {
           <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 hover:bg-white/15 transition-all duration-300">
             <div className="flex flex-col items-center text-center">
               <div className="bg-white/20 rounded-2xl p-4 mb-6">
-                <Globe size={32} className="text-white" />
+                <Wand2 size={32} className="text-white" />
               </div>
               <div className="text-5xl font-bold text-white mb-3">{t('metrics.compatibility.number')}</div>
               <h4 className="text-2xl font-bold text-white">{t('metrics.compatibility.title')}</h4>

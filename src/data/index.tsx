@@ -35,25 +35,25 @@ export const teamMembers: TeamMember[] = [
     name: 'Sarah Johnson',
     role: 'CEO & Founder',
     bio: 'A former shelter volunteer, Sarah founded Adoptia to revolutionize pet adoption through AI-powered matching.',
-    imageUrl: 'https://images.pexels.com/photos/5704849/pexels-photo-5704849.jpeg?auto=compress&cs=tinysrgb&w=800',
+    imageUrl: 'src/assets/cat.jpeg',
   },
   {
     name: 'Michael Chen',
     role: 'Chief Technology Officer',
     bio: 'Michael leads our AI initiatives, developing innovative solutions to match pets with their perfect families.',
-    imageUrl: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=800',
+    imageUrl: 'src/assets/beaver.jpeg',
   },
   {
     name: 'Aisha Patel',
     role: 'Director of Shelter Relations',
     bio: 'Aisha\'s background in animal welfare drives her passion for connecting shelters with potential adopters.',
-    imageUrl: 'https://images.pexels.com/photos/3796217/pexels-photo-3796217.jpeg?auto=compress&cs=tinysrgb&w=800',
+    imageUrl: 'src/assets/rabbit.jpeg',
   },
   {
     name: 'David Rodriguez',
     role: 'Head of Partnerships',
     bio: 'David builds relationships with shelters and veterinary clinics to expand our network and help more pets find homes.',
-    imageUrl: 'https://images.pexels.com/photos/2589650/pexels-photo-2589650.jpeg?auto=compress&cs=tinysrgb&w=800',
+    imageUrl: 'src/assets/bear.jpeg',
   },
 ];
 
@@ -87,7 +87,7 @@ export const blogPosts: BlogPost[] = [
     title: 'The Story of Adoptia: Revolutionizing Pet Adoption Through AI',
     excerpt: 'How a simple vision transformed into a revolutionary platform connecting shelter pets with their perfect forever homes.',
     date: 'March 15, 2024',
-    imageUrl: 'https://images.pexels.com/photos/1904105/pexels-photo-1904105.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    imageUrl: 'src/assets/robot.jpeg',
     author: 'Sarah Johnson',
     content: (
       <div className="space-y-6">

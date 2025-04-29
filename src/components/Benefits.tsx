@@ -1,5 +1,5 @@
 import React from 'react';
-import { Clock, Brain, Heart, Users } from 'lucide-react';
+import { Clock, Brain, Users, PawPrint } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useTranslation } from '../i18n';
 
@@ -43,7 +43,7 @@ const Benefits: React.FC = () => {
 
             <div className="flex items-start gap-6 group">
               <div className="bg-3B7FD9/10 rounded-full p-4 w-16 h-16 flex items-center justify-center group-hover:bg-3B7FD9/20 transition-colors duration-300">
-                <Heart size={32} className="text-3B7FD9" />
+                <PawPrint size={32} className="text-3B7FD9" />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{t('benefits.match.title')}</h3>
