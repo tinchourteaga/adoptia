@@ -13,7 +13,7 @@ import { Tooltip } from 'react-tooltip';
 const MapChart = () => (
   <div style={{ width: "100%", overflowX: "auto", borderStyle: "double" }}>
     <ComposableMap width={1400} height={800} projectionConfig={{ scale: 300 }}>
-      <Geographies geography="/map.json">
+      <Geographies geography={`${import.meta.env.BASE_URL}map.json`}>
         {({ geographies }) =>
           geographies.map((geo) => {
             const isHighlighted = geo.id === "ESP" || geo.id === "ARG";

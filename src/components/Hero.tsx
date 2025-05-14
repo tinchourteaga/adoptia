@@ -2,6 +2,7 @@ import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useTranslation } from '../i18n';
+import coupleImage from '../assets/couple_with_cat_2.png'
 
 const Hero: React.FC = () => {
   const { language } = useLanguage();
@@ -38,8 +39,8 @@ const Hero: React.FC = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/30 to-teal-500/30 rounded-2xl transform rotate-3"></div>
               <img 
-                src="src/assets/couple_with_cat_2.png"
-                alt="Happy adopted dog with family" 
+                src={coupleImage}
+                alt="Happy adopted cat with family" 
                 className="rounded-2xl shadow-xl relative z-10 w-full object-cover h-[500px]"
               />
             </div>

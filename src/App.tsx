@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, HashRouter } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import AboutPage from './pages/AboutPage';
@@ -39,7 +39,7 @@ function App() {
 
   return (
     <LanguageProvider>
-      <Router>
+      <HashRouter>
       <ScrollToTop />
         <div className="font-sans text-gray-900 antialiased">
           <Navbar />
@@ -50,7 +50,7 @@ function App() {
           </Routes>
           <Footer />
         </div>
-      </Router>
+      </HashRouter>
     </LanguageProvider>
   );
 }

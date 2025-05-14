@@ -1,4 +1,16 @@
 import { NavItem, TeamMember, Testimonial, Value, BlogPost } from '../types';
+import { useLanguage } from '../contexts/LanguageContext';
+import { useTranslation } from '../i18n';
+import robotImage from '../assets/robot.jpeg'
+import beaverImage from '../assets/beaver.jpeg'
+import catImage from '../assets/cat.jpeg'
+import rabbitImage from '../assets/rabbit.jpeg'
+import bearImage from '../assets/bear.jpeg'
+import kidImage from '../assets/kid_with_dog.png'
+import groupImage from '../assets/group_with_dogs.png'
+import elderImage from '../assets/elder_with_dog.png'
+
+
 
 export const navItems: NavItem[] = [
   { label: 'Home', href: '#' },
@@ -35,49 +47,49 @@ export const teamMembers: TeamMember[] = [
     name: 'Sarah Johnson',
     role: 'CEO & Founder',
     bio: 'A former shelter volunteer, Sarah founded Adoptia to revolutionize pet adoption through AI-powered matching.',
-    imageUrl: 'src/assets/cat.jpeg',
+    imageUrl: catImage,
   },
   {
     name: 'Michael Chen',
     role: 'Chief Technology Officer',
     bio: 'Michael leads our AI initiatives, developing innovative solutions to match pets with their perfect families.',
-    imageUrl: 'src/assets/beaver.jpeg',
+    imageUrl: beaverImage,
   },
   {
     name: 'Aisha Patel',
     role: 'Director of Shelter Relations',
     bio: 'Aisha\'s background in animal welfare drives her passion for connecting shelters with potential adopters.',
-    imageUrl: 'src/assets/rabbit.jpeg',
+    imageUrl: rabbitImage,
   },
   {
     name: 'David Rodriguez',
     role: 'Head of Partnerships',
     bio: 'David builds relationships with shelters and veterinary clinics to expand our network and help more pets find homes.',
-    imageUrl: 'src/assets/bear.jpeg',
+    imageUrl: bearImage,
   },
 ];
 
 export const testimonials: Testimonial[] = [
   {
     id: 1,
-    quote: "Thanks to Adoptia's AI matching, we found our perfect companion. The platform made it easy to find a pet that fits our lifestyle perfectly.",
-    author: "May and Ringo",
-    company: "California",
-    imageUrl: "src/assets/kid_with_dog.png"
+    quote: 'testimonials.testimonial1',
+    author: "Carla & Ringo",
+    company: "Sevilla, España",
+    imageUrl: kidImage
   },
   {
     id: 2,
-    quote: "As shelter volunteers, Adoptia has transformed how we connect our animals with loving homes. Their AI technology is revolutionary.",
-    author: "Emily Thornton",
-    company: "Happy Tails Shelter",
-    imageUrl: "src/assets/group_with_dogs.png"
+    quote: 'testimonials.testimonial2',
+    author: "Emilia Bregman",
+    company: "Rio Negro, Argentina",
+    imageUrl: groupImage
   },
   {
     id: 3,
-    quote: "The AI-powered matching system helped us find our senior cat Max. We couldn't be happier with how perfect he is for our family.",
-    author: "Mary and Max",
-    company: "Texas",
-    imageUrl: "src/assets/elder_with_dog.png"
+    quote: 'testimonials.testimonial3',
+    author: "Maria & Pipo",
+    company: "Buenos Aires, Argentina",
+    imageUrl: elderImage
   },
 ];
 
@@ -87,7 +99,7 @@ export const blogPosts: BlogPost[] = [
     title: 'The Story of Adoptia: Revolutionizing Pet Adoption Through AI',
     excerpt: 'How a simple vision transformed into a revolutionary platform connecting shelter pets with their perfect forever homes.',
     date: 'March 15, 2024',
-    imageUrl: 'src/assets/robot.jpeg',
+    imageUrl: robotImage,
     author: 'Sarah Johnson',
     content: (
       <div className="space-y-6">

@@ -118,6 +118,9 @@ export const translations = {
     testimonials: {
       title: 'What Families Are Saying',
       subtitle: 'Hear from families and partners who have experienced the Adoptia difference.',
+      testimonial1: "Thanks to Adoptia's AI matching, we found our perfect companion. The platform made it easy to find a pet that checked everything we were looking for.",
+      testimonial2: "As shelter volunteers, Adoptia has transformed how we connect our animals with loving homes. Their AI technology is revolutionary.",
+      testimonial3: "The AI-powered matching system helped me find a senior dog called Pipo. I couldn't be happier with how perfect he is for my lifestly.",
     },
     contact: {
       title: 'Connect With Us',
@@ -192,13 +195,13 @@ export const translations = {
       about: 'Nosotros',
       blog: 'Blog',
       contact: 'Contacto',
-      signIn: 'Iniciar Sesión',
+      signIn: 'Iniciar sesión',
     },
     hero: {
       title: 'Encuentra tu\nCompañero Perfecto',
-      subtitle: 'Adoptia utiliza tecnología de IA para conectarte con tu mascota ideal, haciendo la adopción más simple y exitosa que nunca.',
-      findMatch: 'Encuentra tu Match',
-      learnMore: 'Saber Más',
+      subtitle: 'Adoptia utiliza tecnología de vanguardia e inteligencia artificial para conectarte con tu mascota ideal, haciendo la adopción más simple y exitosa que nunca.',
+      findMatch: 'Encuentra tu match',
+      learnMore: 'Saber más',
     },
     howItWorks: {
       title: 'Adopta en 3 simples pasos',
@@ -262,7 +265,7 @@ export const translations = {
       compatibility: {
         number: '88%',
         title: 'Compatibilidad',
-        subtitle: 'Tasa de éxito en matches',
+        subtitle: 'Tasa de éxito al vincular',
       },
       shelters: {
         number: '50+',
@@ -279,7 +282,7 @@ export const translations = {
       },
       matching: {
         title: 'Match de Adoptantes',
-        description: 'Accede a matching impulsado por IA para conectar tus animales con las familias más adecuadas, aumentando las tasas de adopción exitosa.',
+        description: 'Utiliza IA para conectar tus animales con las familias más adecuadas, aumentando las tasas de adopción exitosa.',
       },
       analytics: {
         title: 'Panel de Análisis',
@@ -299,35 +302,38 @@ export const translations = {
       },
     },
     testimonials: {
-      title: 'Lo que dicen las Familias',
-      subtitle: 'Escucha de familias y socios que han experimentado la diferencia Adoptia.',
+      title: 'Lo que dicen las familias',
+      subtitle: 'Escucha de familias y refugios que han experimentado Adoptia.',
+      testimonial1: "Gracias a la inteligencia artificial de Adoptia, encontramos a nuestra mascota ideal. La plataforma nos facilitó encontrar una mascota que cumple con todos lo que estabamos buscando.",
+      testimonial2: "Como voluntarios de refugios, Adoptia ha transformado la forma en que conectamos a nuestros animales con hogares amorosos. Su tecnología de inteligencia artificial es revolucionaria.",
+      testimonial3: "El sistema de emparejamiento con IA me ayudó a encontrar a Pipo, un perro mayor. Estoy maravillada con lo perfecto que es para mi estilo de vida.",
     },
     contact: {
-      title: 'Conéctate con Nosotros',
+      title: 'Conéctate con nosotros',
       subtitle: '¿Tienes preguntas sobre adopción o cómo Adoptia puede ayudar? Nuestro equipo está aquí para brindarte orientación y apoyo en tu viaje.',
       form: {
-        name: 'Tu Nombre',
-        email: 'Correo Electrónico',
+        name: 'Tu nombre',
+        email: 'Correo electrónico',
         message: 'Mensaje',
         placeholder: {
           name: 'Ingresa tu nombre',
           email: 'Ingresa tu correo',
           message: '¿Cómo podemos ayudarte?',
         },
-        submit: 'Enviar Mensaje',
+        submit: 'Enviar mensaje',
       },
       email: {
-        title: 'Envíanos un Email',
+        title: 'Envíanos un email',
         subtitle: 'Para consultas generales:',
       },
       chat: {
-        title: 'Chat en Vivo',
+        title: 'Chat en vivo',
         subtitle: 'Nuestro equipo de soporte está disponible de Lunes a Viernes, 9am-5pm EST.',
-        button: 'Iniciar Chat',
+        button: 'Iniciar chat',
       },
     },
     blog: {
-      title: 'Nuestro Blog',
+      title: 'Nuestro blog',
       subtitle: 'Historias de innovación, compasión y adopciones exitosas de nuestra comunidad.',
       readMore: 'Leer más',
       backToAll: 'Volver a todas las publicaciones',
@@ -336,24 +342,24 @@ export const translations = {
     },
     footer: {
       about: {
-        description: 'Conectando corazones y construyendo familias a través de tecnología innovadora y compasiva.',
+        description: 'Adopta con inteligencia, ama con el corazón.',
       },
       quickLinks: {
-        title: 'Enlaces Rápidos',
+        title: 'Enlaces rápidos',
         home: 'Inicio',
-        about: 'Sobre Nosotros',
-        mission: 'Nuestra Misión',
-        team: 'Nuestro Equipo',
+        about: 'Sobre nosotros',
+        mission: 'Nuestra misión',
+        team: 'Nuestro equipo',
         testimonials: 'Testimonios',
         contact: 'Contacto',
       },
       resources: {
         title: 'Recursos',
-        guide: 'Guía de Adopción',
-        faq: 'Preguntas Frecuentes',
+        guide: 'Guía de adopción',
+        faq: 'Preguntas frecuentes',
         blog: 'Blog',
-        support: 'Servicios de Soporte',
-        partners: 'Agencias Asociadas',
+        support: 'Servicios de soporte',
+        partners: 'Agencias asociadas',
       },
       newsletter: {
         title: 'Boletín',
@@ -363,9 +369,9 @@ export const translations = {
       },
       copyright: '© 2025 Adoptia. Todos los derechos reservados.',
       policies: {
-        privacy: 'Política de Privacidad',
-        terms: 'Términos de Servicio',
-        cookies: 'Política de Cookies',
+        privacy: 'Política de privacidad',
+        terms: 'Términos de servicio',
+        cookies: 'Política de cookies',
       },
     },
   },

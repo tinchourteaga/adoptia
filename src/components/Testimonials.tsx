@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { testimonials } from '../data';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
+import { useTranslation } from '../i18n';
 
 const Testimonials: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isAutoplay, setIsAutoplay] = useState(true);
+  const { language } = useLanguage();
+  const { t } = useTranslation(language);
 
   useEffect(() => {
     let interval: number;
@@ -36,10 +40,10 @@ const Testimonials: React.FC = () => {
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-4">What Families Are Saying</h2>
+          <h2 className="text-3xl font-bold mb-4">{t('testimonials.title')}</h2>
           <div className="h-1 w-20 bg-white mx-auto mb-8"></div>
           <p className="text-lg text-blue-100 max-w-2xl mx-auto">
-            Hear from families and partners who have experienced the Adoptia difference.
+          {t('testimonials.subtitle')}
           </p>
         </div>
 
@@ -62,7 +66,7 @@ const Testimonials: React.FC = () => {
                           />
                         </div>
                         <div className="flex-1">
-                          <p className="text-lg md:text-xl italic mb-6">{testimonial.quote}</p>
+                          <p className="text-lg md:text-xl italic mb-6">{t(testimonial.quote)}</p>
                           <div>
                             <h4 className="font-bold text-lg">{testimonial.author}</h4>
                             <p className="text-blue-200">{testimonial.company}</p>
