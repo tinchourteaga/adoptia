@@ -99,28 +99,20 @@ export const blogPosts: BlogPost[] = [
     date: 'blog.posts.post1.date',
     imageUrl: robotImage,
     author: 'Sarah Johnson',
-    content: (
-      <div className="space-y-6">
-        <p>
-          In 2024, Adoptia emerged from a simple yet powerful vision: to transform the way people connect with shelter pets. Our founder, Sarah Johnson, witnessed firsthand the challenges both shelters and potential adopters faced in finding the perfect match.
-        </p>
-        <p>
-          "Too often, I saw wonderful animals waiting months for adoption while loving families struggled to find their ideal pet," Sarah recalls. "I knew technology could bridge this gap."
-        </p>
-        <p>
-          This insight led to the development of our AI-powered matching system, which considers over 50 different factors to create compatible connections between pets and adopters. The results have been remarkable:
-        </p>
-        <ul className="list-disc pl-6 space-y-2">
-          <li>88% successful match rate</li>
-          <li>50% reduction in average adoption time</li>
-          <li>90% decrease in adoption returns</li>
-          <li>Partnerships with over 50 shelters across Spain and South America</li>
-        </ul>
-        <p>
-          But Adoptia is more than just technology. It's about building a community where every adoption story becomes a success story. Our platform provides continuous support, resources, and guidance to ensure both pets and their new families thrive together.
-        </p>
-      </div>
-    ),
+    contentKeys: {
+      paragraphs: [
+        'blog.posts.post1.paragraph1',
+        'blog.posts.post1.paragraph2',
+        'blog.posts.post1.paragraph3',
+        'blog.posts.post1.paragraph4',
+      ],
+      bullets: [
+        'blog.posts.post1.bullet1',
+        'blog.posts.post1.bullet2',
+        'blog.posts.post1.bullet3',
+        'blog.posts.post1.bullet4',
+      ]
+    },
   },
   {
     id: 'ai-matching',
@@ -129,11 +121,17 @@ export const blogPosts: BlogPost[] = [
     date: 'blog.posts.post2.date',
     imageUrl: 'https://images.pexels.com/photos/4587998/pexels-photo-4587998.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     author: 'Michael Chen',
-    content: (
-      <div className="space-y-6">
-        <p>Coming soon...</p>
-      </div>
-    ),
+    contentKeys: {
+      paragraphs: [
+        'blog.posts.post2.paragraph1',
+        'blog.posts.post2.paragraph2',
+        'blog.posts.post2.paragraph3',
+        'blog.posts.post2.paragraph4',
+      ],
+      bullets: [
+
+      ]
+    }
   },
   {
     id: 'shelter-success',
@@ -142,10 +140,16 @@ export const blogPosts: BlogPost[] = [
     date: 'blog.posts.post3.date',
     imageUrl: 'https://images.pexels.com/photos/1350593/pexels-photo-1350593.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     author: 'Aisha Patel',
-    content: (
-      <div className="space-y-6">
-        <p>Coming soon...</p>
-      </div>
-    ),
+    contentKeys: {
+      paragraphs: [
+        'blog.posts.post3.paragraph1',
+        'blog.posts.post3.paragraph2',
+        'blog.posts.post3.paragraph3',
+        'blog.posts.post3.paragraph4',
+      ],
+      bullets: [
+
+      ]
+    }
   },
 ];

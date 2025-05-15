@@ -3,6 +3,22 @@ import { Calendar, ArrowLeft } from 'lucide-react';
 import { blogPosts } from '../data';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useTranslation } from '../i18n';
+import type { BlogPost } from '../types';
+
+//TODO: extend this component to allow other post layouts
+const BlogPostContent: React.FC<{ contentKeys: BlogPost['contentKeys']; t: (key: string) => string }> = ({ contentKeys, t }) => (
+  <div className="space-y-6">
+    <p> {t(contentKeys.paragraphs[0])} </p>
+    <p> {t(contentKeys.paragraphs[1])} </p>
+    <p> {t(contentKeys.paragraphs[2])} </p>
+    <ul className="list-disc pl-6 space-y-2">
+      {contentKeys.bullets.map((key, i) => (
+        <li key={i}>{t(key)}</li>
+      ))}
+    </ul>
+    <p> {t(contentKeys.paragraphs[3])} </p>
+  </div>
+);
 
 const Blog: React.FC = () => {
   const [selectedPost, setSelectedPost] = useState<string | null>(null);
@@ -39,7 +55,7 @@ const Blog: React.FC = () => {
                 {t(currentPost.title)}
               </h1>
               <div className="prose max-w-none text-gray-700">
-                {currentPost.content}
+              <BlogPostContent contentKeys={currentPost.contentKeys} t={t} />
               </div>
             </div>
           </article>

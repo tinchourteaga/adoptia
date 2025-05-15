@@ -26,11 +26,16 @@ export interface Value {
   icon: string;
 }
 
+export type BlogPostContentKeys = {
+  paragraphs: string[];
+  bullets: string[];
+};
+
 export interface BlogPost {
   id: string;
   title: string;
   excerpt: string;
-  content: ReactNode;
+  contentKeys: BlogPostContentKeys;
   date: string;
   imageUrl: string;
   author: string;
