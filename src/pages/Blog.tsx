@@ -32,11 +32,11 @@ const Blog: React.FC = () => {
             <div className="p-8">
               <div className="flex items-center text-gray-600 mb-4">
                 <Calendar size={16} className="mr-2" />
-                <time className="mr-4">{t('blog.postedOn')} {currentPost.date}</time>
+                <time className="mr-4">{t('blog.postedOn')} {t(currentPost.date)}</time>
                 <span>{t('blog.by')} {currentPost.author}</span>
               </div>
               <h1 className="text-3xl font-bold text-gray-900 mb-6">
-                {currentPost.title}
+                {t(currentPost.title)}
               </h1>
               <div className="prose max-w-none text-gray-700">
                 {currentPost.content}
@@ -76,10 +76,10 @@ const Blog: React.FC = () => {
               <div className="p-6">
                 <div className="flex items-center text-gray-600 text-sm mb-3">
                   <Calendar size={14} className="mr-2" />
-                  <time>{post.date}</time>
+                  <time>{t(post.date)}</time>
                 </div>
-                <h2 className="text-xl font-bold text-gray-900 mb-3">{post.title}</h2>
-                <p className="text-gray-700 text-sm mb-4">{post.excerpt}</p>
+                <h2 className="text-xl font-bold text-gray-900 mb-3">{t(post.title)}</h2>
+                <p className="text-gray-700 text-sm mb-4">{t(post.excerpt)}</p>
                 <p className="text-3B7FD9 text-sm">{t('blog.readMore')} →</p>
               </div>
             </article>

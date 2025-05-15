@@ -94,9 +94,9 @@ export const testimonials: Testimonial[] = [
 export const blogPosts: BlogPost[] = [
   {
     id: 'adoptia-story',
-    title: 'The Story of Adoptia: Revolutionizing Pet Adoption Through AI',
-    excerpt: 'How a simple vision transformed into a revolutionary platform connecting shelter pets with their perfect forever homes.',
-    date: 'March 15, 2024',
+    title: 'blog.posts.post1.title',
+    excerpt: 'blog.posts.post1.excerpt',
+    date: 'blog.posts.post1.date',
     imageUrl: robotImage,
     author: 'Sarah Johnson',
     content: (
@@ -124,9 +124,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 'ai-matching',
-    title: 'How AI is Making Pet Adoption More Successful',
-    excerpt: 'Discover how our advanced AI algorithms are creating perfect matches between pets and adopters.',
-    date: 'March 10, 2024',
+    title: 'blog.posts.post2.title',
+    excerpt: 'blog.posts.post2.excerpt',
+    date: 'blog.posts.post2.date',
     imageUrl: 'https://images.pexels.com/photos/4587998/pexels-photo-4587998.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     author: 'Michael Chen',
     content: (
@@ -137,9 +137,9 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: 'shelter-success',
-    title: 'Transforming Shelter Operations with Technology',
-    excerpt: 'Learn how shelters are using Adoptia to streamline their operations and increase adoption rates.',
-    date: 'March 5, 2024',
+    title: 'blog.posts.post3.title',
+    excerpt: 'blog.posts.post3.excerpt',
+    date: 'blog.posts.post3.date',
     imageUrl: 'https://images.pexels.com/photos/1350593/pexels-photo-1350593.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     author: 'Aisha Patel',
     content: (

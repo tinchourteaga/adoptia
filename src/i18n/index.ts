@@ -229,7 +229,24 @@ export const translations = {
       readMore: 'Read more',
       backToAll: 'Back to all posts',
       postedOn: 'Posted on',
-      by: 'By',
+      by: '| By',
+      posts: {
+        post1: {
+          title: 'The story of Adoptia: revolutionizing pet adoption through AI',
+          date: 'April 18, 2025',
+          excerpt: 'How a simple vision transformed into a revolutionary platform connecting shelter pets with their perfect forever homes.',
+        },
+        post2: {
+          title: 'How AI is making pet adoption more successful',
+          date: 'March 28, 2025',
+          excerpt: 'Discover how our advanced AI algorithms are creating perfect matches between pets and adopters.',
+        },
+        post3: {
+          title: 'Transforming animal operations with technology',
+          date: 'March 4, 2025',
+          excerpt: 'Lean how technology is a fundamental ally in operations and critical moments',
+        },
+      },
     },
     footer: {
       about: {
@@ -492,7 +509,24 @@ export const translations = {
       readMore: 'Leer más',
       backToAll: 'Volver a todas las publicaciones',
       postedOn: 'Publicado el',
-      by: 'Por',
+      by: '| Por',
+      posts: {
+        post1: {
+          title: 'La historia de Adoptia: revolucionando la adopción de mascotas a través de IA',
+          date: '18 abril, 2025',
+          excerpt: 'Cómo una visión simple se transformó en una plataforma revolucionaria que conecta a las mascotas de refugios con sus hogares perfectos para siempre.',
+        },
+        post2: {
+          title: 'Cómo la IA está ayudando a aumentar la tasa de adopción de mascotas',
+          date: '28 marzo, 2025',
+          excerpt: 'Descubre cómo nuestros algoritmos avanzados de IA están creando combinaciones perfectas entre mascotas y adoptantes.',
+        },
+        post3: {
+          title: 'Transformando las operaciones en animales con tecnología',
+          date: '4 marzo, 2025',
+          excerpt: 'Lee como la tecnología es una aliada fundamental en operaciones y momentos críticos.',
+        },
+      },
     },
     footer: {
       about: {
