@@ -1,15 +1,19 @@
 import React from 'react';
+import { useLanguage } from '../contexts/LanguageContext';
+import { useTranslation } from '../i18n';
 
 const About: React.FC = () => {
+  const { language } = useLanguage();
+  const { t } = useTranslation(language);
+
   return (
     <section id="about" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">About Adoptia</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">{t('about.title')}</h2>
           <div className="h-1 w-20 bg-3B7FD9 mx-auto mb-8"></div>
           <p className="text-lg text-gray-700 leading-relaxed">
-            Founded in 2024, Adoptia is revolutionizing pet adoption by using AI technology
-            to create perfect matches between shelter animals and loving homes.
+            {t('about.subtitle')}
           </p>
         </div>
 
@@ -26,18 +30,15 @@ const About: React.FC = () => {
           </div>
           
           <div className="lg:w-1/2">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Our Story</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">{t('about.story.title')}</h3>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Adoptia was created by a dedicated team of animal lovers who saw a better way to connect pets with people. Through their experiences volunteering at shelters, they witnessed the struggles shelters faced in placing animals and the frustration adopters felt trying to find the right companion.
+              {t('about.story.content1')}
             </p>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Today, our AI-powered platform brings together shelters and potential adopters in a way that considers
-              not just basic preferences, but lifestyle factors, comfort with animals, and pet personalities to ensure
-              successful, lasting adoptions.
+              {t('about.story.content2')}
             </p>
             <p className="text-gray-700 leading-relaxed">
-              We believe that technology, when designed with compassion and understanding, can help more pets find
-              their forever homes while supporting everyone involved in this life-changing journey.
+              {t('about.story.content3')}
             </p>
           </div>
         </div>

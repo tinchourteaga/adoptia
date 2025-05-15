@@ -1,16 +1,20 @@
 import React from 'react';
 import { teamMembers } from '../data';
+import { useLanguage } from '../contexts/LanguageContext';
+import { useTranslation } from '../i18n';
 
 const Team: React.FC = () => {
+  const { language } = useLanguage();
+  const { t } = useTranslation(language);
+
   return (
     <section id="team" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Team</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">{t('team.title')}</h2>
           <div className="h-1 w-20 bg-3B7FD9 mx-auto mb-8"></div>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-            Meet the passionate professionals dedicated to transforming the adoption experience 
-            through innovation, compassion, and expertise.
+          {t('team.subtitle')}
           </p>
         </div>
 
@@ -29,8 +33,8 @@ const Team: React.FC = () => {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-1">{member.name}</h3>
-                <p className="text-3B7FD9 font-medium mb-4">{member.role}</p>
-                <p className="text-gray-700 text-sm">{member.bio}</p>
+                <p className="text-3B7FD9 font-medium mb-4">{t(member.role)}</p>
+                <p className="text-gray-700 text-sm">{t(member.bio)}</p>
               </div>
             </div>
           ))}

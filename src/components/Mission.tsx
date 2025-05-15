@@ -1,6 +1,8 @@
 import React from 'react';
 import { companyValues } from '../data';
 import { Heart, Shield, Sparkles, Users } from 'lucide-react';
+import { useLanguage } from '../contexts/LanguageContext';
+import { useTranslation } from '../i18n';
 
 const getIcon = (iconName: string) => {
   switch (iconName) {
@@ -18,15 +20,17 @@ const getIcon = (iconName: string) => {
 };
 
 const Mission: React.FC = () => {
+  const { language } = useLanguage();
+  const { t } = useTranslation(language);
+
   return (
     <section id="mission" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Mission & Values</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">{t('mission.title')}</h2>
           <div className="h-1 w-20 bg-3B7FD9 mx-auto mb-8"></div>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-            We're committed to creating a world where every pet has the opportunity to thrive in a loving family,
-            and where the adoption process is supportive, transparent, and centered on compassion.
+            {t('mission.subtitle')}
           </p>
         </div>
 
@@ -39,8 +43,8 @@ const Mission: React.FC = () => {
               <div className="bg-white rounded-full w-16 h-16 flex items-center justify-center mb-6 shadow-sm group-hover:shadow-md transition-shadow duration-300">
                 {getIcon(value.icon)}
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">{value.title}</h3>
-              <p className="text-gray-700">{value.description}</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">{t(value.title)}</h3>
+              <p className="text-gray-700">{t(value.description)}</p>
             </div>
           ))}
         </div>

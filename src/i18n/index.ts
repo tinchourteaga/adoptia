@@ -17,6 +17,82 @@ export const translations = {
       findMatch: 'Find your match',
       learnMore: 'Learn more',
     },
+    about: {
+      title: 'About Adoptia',
+      subtitle: 'Founded in 2024, Adoptia is revolutionizing pet adoption by using AI technology to create perfect matches between shelter animals and loving homes.',
+      story: {
+        title: 'Our story',
+        content1: 'Adoptia was created by a dedicated team of animal lovers who saw a better way to connect pets with people. Through their experiences volunteering at shelters, they witnessed the struggles shelters faced in placing animals and the frustration adopters felt trying to find the right companion.',
+        content2: 'Today, our AI-powered platform brings together shelters and potential adopters in a way that considers not just basic preferences, but lifestyle factors, comfort with animals, and pet personalities to ensure successful, lasting adoptions.',
+        content3: 'We believe that technology, when designed with compassion and understanding, can help more pets find their forever homes while supporting everyone involved in this life-changing journey.'
+      }
+    },
+    mission: {
+      title: 'Our mission and values',
+      subtitle: 'We\'re committed to creating a world where every pet has the opportunity to thrive in a loving family, and where the adoption process is supportive, transparent, and centered on compassion.',
+      values: {
+        innovation: {
+          title: 'Innovation',
+          description: 'We leverage AI technology to create perfect matches between pets and their forever homes.'
+        },
+        compassion: {
+          title: 'Compassion',
+          description: 'Every animal deserves love and care. We approach each adoption with heart and understanding.'
+        },
+        integrity: {
+          title: 'Integrity',
+          description: 'We maintain transparent relationships with shelters and adopters, ensuring trust in every step.'
+        },
+        community: {
+          title: 'Community',
+          description: 'We build strong networks connecting shelters, adopters, and animal welfare advocates.'
+        }
+      }
+    },
+    coverage: {
+      title: 'Our global presence',
+      subtitle: 'Currently operating in Spain and across South America, we\'re expanding our network to help more pets find their forever homes.',
+      legend: {
+        regions: 'Active regions',
+        shelters: '50+ partner shelters'
+      },
+      locations: {
+        spain: {
+          title: 'Spain',
+          description: '20+ partner shelters across major cities'
+        },
+        southAmerica: {
+          title: 'South America',
+          description: '30+ partner shelters in Argentina, Chile, and Colombia'
+        }
+      }
+    },
+    team: {
+      title: 'Our team',
+      subtitle: 'Meet the passionate professionals dedicated to transforming the adoption experience through innovation, compassion, and expertise.',
+      members: {
+        sarah: {
+          name: 'Sarah Johnson',
+          role: 'CEO & Founder',
+          bio: 'A former shelter volunteer, Sarah founded Adoptia to revolutionize pet adoption through AI-powered matching.'
+        },
+        michael: {
+          name: 'Michael Chen',
+          role: 'Chief Technology Officer',
+          bio: 'Michael leads our AI initiatives, developing innovative solutions to match pets with their perfect families.'
+        },
+        aisha: {
+          name: 'Aisha Patel',
+          role: 'Director of Shelter Relations',
+          bio: 'Aisha\'s background in animal welfare drives her passion for connecting shelters with potential adopters.'
+        },
+        david: {
+          name: 'David Rodriguez',
+          role: 'Head of Partnerships',
+          bio: 'David builds relationships with shelters and veterinary clinics to expand our network and help more pets find homes.'
+        }
+      }
+    },
     howItWorks: {
       title: 'Adopt in 3 easy steps',
       step1: {
@@ -203,6 +279,82 @@ export const translations = {
       subtitle: 'Adoptia utiliza tecnología de vanguardia e inteligencia artificial para conectarte con tu mascota ideal, haciendo la adopción más simple y exitosa que nunca.',
       findMatch: 'Encuentra tu match',
       learnMore: 'Saber más',
+    },
+    about: {
+      title: 'Sobre Adoptia',
+      subtitle: 'Fundada en 2024, Adoptia está revolucionando la adopción de mascotas utilizando tecnología de IA para crear matches perfectos entre animales de refugio y hogares amorosos.',
+      story: {
+        title: 'Nuestra historia',
+        content1: 'Adoptia fue creada por un equipo dedicado de amantes de los animales que vieron una mejor manera de conectar mascotas con personas. A través de sus experiencias como voluntarios en refugios, fueron testigos de las dificultades que enfrentaban los refugios para ubicar animales y la frustración que sentían los adoptantes al tratar de encontrar al compañero adecuado.',
+        content2: 'Hoy, nuestra plataforma impulsada por IA une a refugios y potenciales adoptantes de una manera que considera no solo preferencias básicas, sino factores de estilo de vida, comodidad con los animales y personalidades de las mascotas para asegurar adopciones exitosas y duraderas.',
+        content3: 'Creemos que la tecnología, cuando se diseña con compasión y comprensión, puede ayudar a más mascotas a encontrar sus hogares para siempre mientras apoya a todos los involucrados en este viaje que cambia vidas.'
+      }
+    },
+    mission: {
+      title: 'Nuestra misión y valores',
+      subtitle: 'Estamos comprometidos a crear un mundo donde cada mascota tenga la oportunidad de prosperar en una familia amorosa, y donde el proceso de adopción sea solidario, transparente y centrado en la compasión.',
+      values: {
+        innovation: {
+          title: 'Innovación',
+          description: 'Aprovechamos la tecnología de IA para crear matches perfectos entre mascotas y sus hogares para siempre.'
+        },
+        compassion: {
+          title: 'Compasión',
+          description: 'Cada animal merece amor y cuidado. Abordamos cada adopción con corazón y comprensión.'
+        },
+        integrity: {
+          title: 'Integridad',
+          description: 'Mantenemos relaciones transparentes con refugios y adoptantes, asegurando la confianza en cada paso.'
+        },
+        community: {
+          title: 'Comunidad',
+          description: 'Construimos redes sólidas que conectan refugios, adoptantes y defensores del bienestar animal.'
+        }
+      }
+    },
+    coverage: {
+      title: 'Nuestra presencia global',
+      subtitle: 'Actualmente operando en España y en toda Sudamérica, estamos expandiendo nuestra red para ayudar a más mascotas a encontrar sus hogares para siempre.',
+      legend: {
+        regions: 'Regiones activas',
+        shelters: '50+ refugios asociados'
+      },
+      locations: {
+        spain: {
+          title: 'España',
+          description: '20+ refugios asociados en las principales ciudades'
+        },
+        southAmerica: {
+          title: 'Sudamérica',
+          description: '30+ refugios asociados en Argentina, Chile y Colombia'
+        }
+      }
+    },
+    team: {
+      title: 'Nuestro equipo',
+      subtitle: 'Conoce a los profesionales apasionados dedicados a transformar la experiencia de adopción a través de la innovación, la compasión y la experiencia.',
+      members: {
+        sarah: {
+          name: 'Sarah Johnson',
+          role: 'CEO y Fundadora',
+          bio: 'Ex voluntaria de refugio, Sarah fundó Adoptia para revolucionar la adopción de mascotas a través del matching impulsado por IA.'
+        },
+        michael: {
+          name: 'Michael Chen',
+          role: 'Director de Tecnología',
+          bio: 'Michael lidera nuestras iniciativas de IA, desarrollando soluciones innovadoras para conectar mascotas con sus familias perfectas.'
+        },
+        aisha: {
+          name: 'Aisha Patel',
+          role: 'Directora de Relaciones con Refugios',
+          bio: 'La experiencia de Aisha en bienestar animal impulsa su pasión por conectar refugios con potenciales adoptantes.'
+        },
+        david: {
+          name: 'David Rodriguez',
+          role: 'Jefe de Alianzas',
+          bio: 'David construye relaciones con refugios y clínicas veterinarias para expandir nuestra red y ayudar a más mascotas a encontrar hogares.'
+        }
+      }
     },
     howItWorks: {
       title: 'Adopta en 3 simples pasos',

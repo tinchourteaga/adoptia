@@ -1,6 +1,4 @@
 import { NavItem, TeamMember, Testimonial, Value, BlogPost } from '../types';
-import { useLanguage } from '../contexts/LanguageContext';
-import { useTranslation } from '../i18n';
 import robotImage from '../assets/robot.jpeg'
 import beaverImage from '../assets/beaver.jpeg'
 import catImage from '../assets/cat.jpeg'
@@ -21,23 +19,23 @@ export const navItems: NavItem[] = [
 
 export const companyValues: Value[] = [
   {
-    title: 'Innovation',
-    description: 'We leverage AI technology to create perfect matches between pets and their forever homes.',
+    title: 'mission.values.innovation.title',
+    description: 'mission.values.innovation.description',
     icon: 'sparkles',
   },
   {
-    title: 'Compassion',
-    description: 'Every animal deserves love and care. We approach each adoption with heart and understanding.',
+    title: 'mission.values.compassion.title',
+    description: 'mission.values.compassion.description',
     icon: 'heart',
   },
   {
-    title: 'Integrity',
-    description: 'We maintain transparent relationships with shelters and adopters, ensuring trust in every step.',
+    title: 'mission.values.integrity.title',
+    description: 'mission.values.integrity.description',
     icon: 'shield',
   },
   {
-    title: 'Community',
-    description: 'We build strong networks connecting shelters, adopters, and animal welfare advocates.',
+    title: 'mission.values.community.title',
+    description: 'mission.values.community.description',
     icon: 'users',
   },
 ];
@@ -45,26 +43,26 @@ export const companyValues: Value[] = [
 export const teamMembers: TeamMember[] = [
   {
     name: 'Sarah Johnson',
-    role: 'CEO & Founder',
-    bio: 'A former shelter volunteer, Sarah founded Adoptia to revolutionize pet adoption through AI-powered matching.',
+    role: 'team.members.sarah.role',
+    bio: 'team.members.sarah.bio',
     imageUrl: catImage,
   },
   {
     name: 'Michael Chen',
-    role: 'Chief Technology Officer',
-    bio: 'Michael leads our AI initiatives, developing innovative solutions to match pets with their perfect families.',
+    role: 'team.members.michael.role',
+    bio: 'team.members.michael.bio',
     imageUrl: beaverImage,
   },
   {
     name: 'Aisha Patel',
-    role: 'Director of Shelter Relations',
-    bio: 'Aisha\'s background in animal welfare drives her passion for connecting shelters with potential adopters.',
+    role: 'team.members.aisha.role',
+    bio: 'team.members.aisha.bio',
     imageUrl: rabbitImage,
   },
   {
     name: 'David Rodriguez',
-    role: 'Head of Partnerships',
-    bio: 'David builds relationships with shelters and veterinary clinics to expand our network and help more pets find homes.',
+    role: 'team.members.david.role',
+    bio: 'team.members.david.bio',
     imageUrl: bearImage,
   },
 ];
